@@ -35,7 +35,7 @@ const AddNewStudent = () => {
             console.log("TOKEN:", token);
 
             const response = await axios.post(
-                "http://127.0.0.1:8000/api/students/create",
+                "https://mern-stack-demo-h6da.onrender.com/api/students/create",
                 {
                     name: student.name,
                     address: student.address,

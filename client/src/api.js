@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "http://localhost:8000/api",
+    baseURL: "https://mern-stack-demo-h6da.onrender.com/api",
 });
 
 // 🔥 Attach token automatically

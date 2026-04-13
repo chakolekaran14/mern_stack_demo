@@ -22,7 +22,7 @@ const EditStudent = () => {
     useEffect(() => {
         const token = localStorage.getItem("token");
 
-        axios.get(`http://127.0.0.1:8000/api/students/read/${id}`, {
+        axios.get("https://mern-stack-demo-h6da.onrender.com//api/students/read/${id}", {
             headers: {
                 Authorization: `Bearer ${token}`
             }

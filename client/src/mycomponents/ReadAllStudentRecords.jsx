@@ -19,7 +19,7 @@ const ReadAllStudentRecords = () => {
                 const token = localStorage.getItem("token");
 
                 const response = await axios.get(
-                    "http://127.0.0.1:8000/api/students",
+                    "https://mern-stack-demo-h6da.onrender.com/api/students",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -53,7 +53,7 @@ const ReadAllStudentRecords = () => {
 
         try {
             const response = await axios.delete(
-                `http://127.0.0.1:8000/api/students/delete/${userId}`,
+                `https://mern-stack-demo-h6da.onrender.com/api/students/delete/${userId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
